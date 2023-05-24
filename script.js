@@ -10,6 +10,12 @@ const inputDistance = document.querySelector(".form__input--distance");
 const inputDuration = document.querySelector(".form__input--duration");
 const inputCadence = document.querySelector(".form__input--cadence");
 const inputElevation = document.querySelector(".form__input--elevation");
+const socialLink = document.querySelector(".social-link");
+
+
+const year = new Date().getFullYear()
+socialLink.textContent = year
+
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
